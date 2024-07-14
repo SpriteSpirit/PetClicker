@@ -561,7 +561,7 @@ class Game:
                                                 "is_bought": item.is_bought})
 
                 with open('save.json', 'w', encoding='utf-8') as f:
-                    json.dump(data, f, ensure_ascii=False)
+                    json.dump(data, f, ensure_ascii=False, indent=4)
 
                 pg.quit()
                 exit()
